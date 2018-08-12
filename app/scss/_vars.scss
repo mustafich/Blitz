@@ -1,6 +1,6 @@
-.button{
+@mixin text {
   color: #000;
-  width: 100px;
-  height: 20px;
-  background-color: gold;
+  font-size: 42px;
+  font-family: "Pacifico";
 }
+span { @include text;}

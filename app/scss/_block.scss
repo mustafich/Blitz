@@ -1,0 +1,62 @@
+
+.block {
+  margin-top: 70px;
+  display: flex;
+justify-content: space-between;
+  flex-wrap: wrap;
+    .block-header {
+      width: 300px;
+      .block-kartinka {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 35px;
+        }
+        h1 {
+
+                float: right;
+                color: #464646;
+                font-size: 20px;
+                font-family: "BEBAS";
+                line-height: 25px;
+
+        }
+      }
+
+
+    }
+  .block-strelki {
+    margin-top: 10px;
+  }
+    .block-center {
+
+      p {
+        font-size: 12px;
+        color: #818181;
+        font-family: "HelveticaNeue";
+        line-height: 22px;
+      }
+
+      .block-strelki {
+
+        img {
+
+        }
+      }
+
+      a {
+              color: #474747;
+              font-family: "BEBAS";
+              font-size: 12px;
+      }
+    }
+}
+@media (max-width: 993px) {
+  .block {
+    justify-content: space-around;
+    &-kartinka {
+      margin-top: 20px;
+    }
+  }
+}

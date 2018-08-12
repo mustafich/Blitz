@@ -1,0 +1,148 @@
+.work {
+  position: relative;
+  z-index: 10;
+  margin-top: 70px;
+  &-left {
+    top: 11px;
+    background-image: url(../img/icons/patern.png);
+    height: 29px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    -webkit-animation: linear 15s rat infinite;
+
+  }
+  @-webkit-keyframes rat {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: -50%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  &-right {
+    top: 11px;
+    background-image: url(../img/icons/patern.png);
+    height: 29px;
+    left: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    -webkit-animation: linear 15s lef infinite;
+  }
+}
+.over {
+overflow: hidden;
+}
+@-webkit-keyframes lef {
+  0% {
+    left: 50%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 50%;
+  }
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+
+  h1 {
+    z-index: 9999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    background-color: #ffffff;
+    height: 50px;
+    width: 220px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+
+.outer {
+  background-image: url(../img/icons/1.png);
+}
+
+.block2 {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &-header {
+    width: 214px;
+    h1 {
+
+      font-size: 14px;
+      font-family: "BEBAS";
+      color: #414141;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    &_photo {
+      img {
+        width: 100%;
+      }
+    }
+    p {
+      font-size: 12px;
+      color: #818181;
+      font-family: "HelveticaNeue";
+      line-height: 22px;
+      margin-bottom: 20px;
+
+    }
+    a {
+      padding-top: 20px;
+      color: #474747;
+      font-family: "BEBAS";
+      font-size: 12px;
+
+    }
+  }
+}
+
+.box {
+
+}
+
+.b2 {
+  height: 200px;
+  border: 3px dashed #000;
+  max-width: 1000px;
+  min-width: 300px;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 993px) {
+  .block2 {
+
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
